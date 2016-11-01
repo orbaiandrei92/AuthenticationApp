@@ -1,0 +1,218 @@
+﻿
+/*Heading 1*/
+h1{
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+table{
+  width:100%;
+  table-layout: fixed;
+}
+
+.tbl-header{
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 0;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-weight: 700;
+    font-size: .8em;
+    font: 13px sans-serif;
+ }
+
+#myLists td{
+    padding: 10px;
+}
+
+.sort-header{
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 0;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-weight: 700;
+    font-size: .8em;
+ }
+
+links.disabled { color:gray; }
+
+.sort-header th{
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.sort-header a{
+    text-decoration: none;
+    color: white;
+    font: 18px sans-serif;
+}
+
+.sort-header a:hover{
+    text-decoration: underline;
+}
+
+.tbl-content{
+  background-color: rgba(0,0,0,0.2);
+  height:350px;
+  overflow-x:auto;
+  margin-top: 0px;
+  box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 0 0 5px 5px;
+}
+
+/*Button*/
+.tbl-content button{
+    margin-top: 30px;
+	border: 0;
+	border-radius: 2px;
+	color: white;
+	padding: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.7em;
+	letter-spacing: 1px;
+	background-color: rgba(0,0,0,0.4);
+	cursor:pointer;
+	outline: none;
+    border-radius: 5px;
+}
+
+.tbl-content button:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.tbl-content button:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+/*Header cell*/
+th{
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/* demo styles */
+
+section{
+  margin:50px;
+}
+
+/* ********** Bottom Section ********** */
+
+.myBottom-section{
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 0;
+    border-radius: 0 0 5px 5px;
+    color: white;
+    font-weight: 700;
+    font-size: .8em;
+}
+
+.myBottom-section .red{
+    color:#ff6a00;
+}
+
+/* ----- Consumer State ----- */
+
+.tbl-content1{
+  background-color: rgba(0,0,0,0.2);
+  height:350px;
+  overflow-x:auto;
+  margin-top: 0px;
+  box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+  text-align: left;
+  margin: 0 auto;
+  border-radius: 0px;
+}
+
+.tbl-content1 input[type="checkbox"] {
+  display: none;
+}
+.tbl-content1 label {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  margin-left: 40px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+.tbl-content1 input[type="checkbox"] + label:before {
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding:0;
+  vertical-align:top;
+  width: 16px;
+  border-radius: 4px;
+
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+  -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+
+  background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+  background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+  background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+  background: linear-gradient(top, #222 0%, #45484d 100%);
+}
+.tbl-content1 input[type="checkbox"]:checked + label:before {
+
+  color: #fff;
+  content: "\2713";
+  text-align: center;
+
+}
+.tbl-content1 input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+/* ********** Consumer Filters ********** */
+
+.my-groups {
+  overflow-x:auto;
+  margin-top: 0px;
+}
+
+.my-filters {
+  overflow-x:auto;
+  margin-top: 0px;
+}
+
+td {
+  padding: 0px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 15px;
+  color: #fff;
+  right: 0px;
+  position:relative;
+  border-top: 1px white solid;
+}
+
+/* ********** Web-kit ScrollBar ********** */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+} 
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}

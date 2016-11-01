@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataMarketConfigurationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Datamarts">
+    <Key>
+      <PropertyRef Name="DatamartId" />
+    </Key>
+    <Property Name="DatamartId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DatamartName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="AddedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayViewName" Type="varchar" MaxLength="50" />
+    <Property Name="FactName" Type="varchar" MaxLength="50" />
+    <Property Name="FlatName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Filters">
+    <Key>
+      <PropertyRef Name="FilterId" />
+    </Key>
+    <Property Name="FilterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="FilterName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="AddedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterValues">
+    <Key>
+      <PropertyRef Name="FilterValueId" />
+    </Key>
+    <Property Name="FilterValueId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FilterId" Type="int" Nullable="false" />
+    <Property Name="FilterValueName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="AddedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Value" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="GroupId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DatamartId" Type="int" Nullable="false" />
+    <Property Name="GroupName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="AddedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ParentGroup" Type="tinyint" />
+    <Property Name="Operator" Type="varchar" MaxLength="3" />
+    <Property Name="FactKey" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DataMarketConfiguration.dbo.ListInProgress_3' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <Association Name="fk_Filters_Groups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="Filters" Type="Self.Filters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="GroupId" />
+      </Principal>
+      <Dependent Role="Filters">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_FilterValues_Filters">
+    <End Role="Filters" Type="Self.Filters" Multiplicity="1" />
+    <End Role="FilterValues" Type="Self.FilterValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Filters">
+        <PropertyRef Name="FilterId" />
+      </Principal>
+      <Dependent Role="FilterValues">
+        <PropertyRef Name="FilterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Groups_Datamarts">
+    <End Role="Datamarts" Type="Self.Datamarts" Multiplicity="1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Datamarts">
+        <PropertyRef Name="DatamartId" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="DatamartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DataMarketConfigurationModelStoreContainer">
+    <EntitySet Name="Datamarts" EntityType="Self.Datamarts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Filters" EntityType="Self.Filters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FilterValues" EntityType="Self.FilterValues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_Filters_Groups" Association="Self.fk_Filters_Groups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="Filters" EntitySet="Filters" />
+    </AssociationSet>
+    <AssociationSet Name="fk_FilterValues_Filters" Association="Self.fk_FilterValues_Filters">
+      <End Role="Filters" EntitySet="Filters" />
+      <End Role="FilterValues" EntitySet="FilterValues" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Groups_Datamarts" Association="Self.fk_Groups_Datamarts">
+      <End Role="Datamarts" EntitySet="Datamarts" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

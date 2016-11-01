@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Login_Style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Footer.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Navbar_style.css" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div style="margin-top: -50px; text-align: left; margin-bottom:20px;">
+        <img src="~/Content/Images/Datamarket-logo-large.png" height="95" width="195" />
+    </div>
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+        <div class="nav-menu">
+            <ul class="my-menu">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About us", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+        </div>
+    </nav>     
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+ 
+    @Html.Partial("_Footer")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

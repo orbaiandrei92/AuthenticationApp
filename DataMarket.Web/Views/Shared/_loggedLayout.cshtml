@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Footer.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Button_style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Navbar_style.css" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div style="margin-top: -50px; text-align: left;">
+        <div>
+            <img src="~/Content/Images/Datamarket-logo-large.png" height="115" width="215" />
+        </div>
+        <div style="color: white; float:right; margin-right: 20px; margin-top: -75px; text-align:center">
+            Hello, @Html.Label(Session["userName"] as string)!
+            <br />
+            @Html.ActionLink("Log out", "Logout", "Home")
+            <br />
+            @if (Convert.ToBoolean(Session["isAdmin"]))
+            {
+                @Html.ActionLink("Admin", "Admin", "Logged")
+            }
+        </div>
+    </div>
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+        <div class="nav-menu">
+            <ul class="my-menu">
+                <li><a href="#" id="myCreateLink" onclick="clearSession()">Create</a></li>
+                <li><a href="#" id="myListsLink">My Lists</a></li>
+                <li>@Html.ActionLink("About us", "About", "Logged")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Logged")</li>
+            </ul>
+            @using (Html.BeginForm("MyLists", "Logged", FormMethod.Post, new { id = "myListForm" }))
+            {
+                <input type="hidden" value='@Session["userId"]' name="id" />
+                    <input type="hidden" value="" name="sortType" />
+            }
+            @using (Html.BeginForm("Create", "Logged", FormMethod.Post, new { id = "myCreateForm" }))
+            {
+                <input type="hidden" value='@Session["userId"]' name="id" />
+            }
+        </div>
+    </nav>   
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+ 
+    @Html.Partial("_Footer")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+<script src="~/Scripts/Submit_forms.js"></script>
+<script src="~/Scripts/Session_storage.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

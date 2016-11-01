@@ -1,0 +1,23 @@
+﻿@model DataMarket.Web.Models.ListInProgressByGroupItemViewModel
+<div id="FiltersDiv">
+    @foreach (var itemByFilter in Model.ListItemsGroupedByFilter)
+    {
+        <br />
+        @Html.Label(itemByFilter.FilterName)<br />
+        <ul>
+            @foreach (var item in itemByFilter.ListItems)
+            {
+                <li>
+                    @using (Html.BeginForm("DeleteListInProgressItem", "Logged", FormMethod.Get, new { id = string.Format("myDeleteListInProgressItemForm{0}", item.FilterValueId) }))
+                    {
+                        <input type="hidden" value='@Session["userId"]' name="userId" />
+                        <input type="hidden" value='@item.FilterValueId' name="filterValueId"/>
+                    }
+                    <input type="button" value="x" onclick="deleteListInProgressItem('@item.FilterValueId')">
+                    <input type="checkbox" id="@item.FilterValueId" class="checkFilter" value="@item.FilterValueId" checked="checked">
+                    <label for="@item.FilterValueId"> @item.FilterValueName</label>
+                </li>
+            }
+        </ul>
+    }
+</div>

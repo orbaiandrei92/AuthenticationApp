@@ -1,0 +1,77 @@
+﻿@model DataMarket.Web.Models.SeeFiltersViewModel
+@{
+    ViewBag.Title = "OverviewList";
+}
+<link href="~/Content/Datamarts_table.css" rel="stylesheet" />
+<link href="~/Content/Menu_Buttons_style.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/See_Filters.css" rel="stylesheet" />
+<h1>
+    <i>
+        Here is your list! name it and save it.
+    </i>
+</h1>
+<form id="result-form">
+    <section>
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th>
+                            @using (Html.BeginForm("AddList", "Logged", FormMethod.Post, new { id = "mySaveListForm" }))
+                            {
+                                <label for="listName">Give a name to your list:</label>
+                                <input type="text" name="list" id="listName" />
+                            }
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="tbl-content1">
+            <table>
+                <tbody>
+                    @foreach (var itemByGroup in Model.ListItemsGrouped)
+                    {
+                        <tr>
+                            <td class="col-xs-12 col-md-8">@Html.Partial("OverviewListPartial", itemByGroup)</td>
+                            <td class="col-xs-6 col-md-4">@Html.Partial("GroupNamePartial", itemByGroup.GroupName)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="myBottom-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-md-8" style="text-align:left">
+                        </th>
+                        <th class="col-md-4">
+                            <label for="count"> Count: </label>
+                            <label id="countValue">@Session["countVal"]</label>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <div class="saveQuestion">
+        <h3><i>Do you want to save the list?</i></h3>
+    </div>
+    <table>
+        <tr>
+            <th class="col-md-8" style="text-align:left">
+                @*@Html.ActionLink("go back", "ConsumerState", new { id = Model.DatamartId, parent = 0 })*@
+            </th>
+            <th class="col-md-4">
+                <button class="my-button" type="button" onclick="location.href='@Url.Action("Create", "Logged")'">No</button>
+                <button class="my-button" type="submit" id="my-button-yes">Yes, save list</button>
+            </th>
+        </tr>
+    </table>
+</form>
+
+
+
+<script src="/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/TextValidation_script.js"></script>

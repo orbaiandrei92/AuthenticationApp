@@ -1,0 +1,26 @@
+﻿@model DataMarket.Web.Models.MyListDetailsByGroupViewModel
+
+<div id="FiltersDiv">
+    @foreach (var itemByFilter in Model.ListItemsByFilter)
+    {
+        <br />
+        <input type="hidden" value="@itemByFilter.FilterName"/>
+        @Html.Label(itemByFilter.FilterName)
+        <div>
+            <input type="button" href="#@itemByFilter.FilterName" class="arrow-down" id="@itemByFilter.FilterName" value="@itemByFilter.FilterName" />
+        </div>
+        <br />
+        <div id="@itemByFilter.FilterName" class="@itemByFilter.FilterName">
+            <ul>
+                @foreach (var item in itemByFilter.ListItems)
+                {
+                    <li>
+                            <label> @item.FilterValueName :</label>
+                            <input type="hidden" class="filterValueIds" value="@item.FilterValueId" />
+                            <label class="red"> @item.Count</label>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+</div>

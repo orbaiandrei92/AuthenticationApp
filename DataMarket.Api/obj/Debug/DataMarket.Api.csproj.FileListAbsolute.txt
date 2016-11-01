@@ -1,0 +1,164 @@
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\csc.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\System.Collections.Immutable.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\System.Reflection.Metadata.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\vbc.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\VBCSCompiler.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\roslyn\VBCSCompiler.exe.config
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\NLog.config
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Api.exe.config
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Api.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Api.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.Configuration.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.Integration.Owin.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.Integration.WebApi.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.Integration.WebApi.Owin.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Business.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Data.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.DTOs.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Infrastructure.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\EntityFramework.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\EntityFramework.SqlServer.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.Agent.Intercept.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.DependencyCollector.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.Web.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.WindowsServer.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.ApplicationInsights.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Diagnostics.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Hosting.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Newtonsoft.Json.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\NLog.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Owin.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Net.Http.Formatting.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Web.Cors.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Web.Http.Cors.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Web.Http.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Web.Http.Owin.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Topshelf.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\AutoMapper.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Business.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Infrastructure.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.Data.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\DataMarket.DTOs.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.Configuration.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.Integration.Owin.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.Integration.WebApi.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Autofac.Integration.WebApi.Owin.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\EntityFramework.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\EntityFramework.SqlServer.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.DependencyCollector.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.Web.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.AI.WindowsServer.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.ApplicationInsights.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Diagnostics.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Hosting.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\Newtonsoft.Json.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\NLog.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Net.Http.Formatting.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Web.Http.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Web.Http.Cors.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\System.Web.Http.Owin.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\bin\AutoMapper.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\obj\Debug\DataMarket.Api.csprojResolveAssemblyReference.cache
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\obj\Debug\DataMarket.Api.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.Api\obj\Debug\DataMarket.Api.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\csc.exe
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\vbc.exe
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\NLog.config
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Api.exe.config
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Api.exe
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Api.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.Configuration.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.Integration.Owin.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.Integration.WebApi.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.Integration.WebApi.Owin.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Business.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Data.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.DTOs.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Infrastructure.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\EntityFramework.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\EntityFramework.SqlServer.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.Web.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Diagnostics.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Hosting.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Newtonsoft.Json.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\NLog.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Owin.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Net.Http.Formatting.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Web.Cors.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Web.Http.Cors.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Web.Http.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Web.Http.Owin.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Topshelf.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\AutoMapper.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Business.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Infrastructure.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.Data.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\DataMarket.DTOs.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.Configuration.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.Integration.Owin.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.Integration.WebApi.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Autofac.Integration.WebApi.Owin.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\EntityFramework.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\EntityFramework.SqlServer.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.Web.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Diagnostics.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Microsoft.Owin.Hosting.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\Newtonsoft.Json.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\NLog.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Net.Http.Formatting.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Web.Http.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Web.Http.Cors.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\System.Web.Http.Owin.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\bin\AutoMapper.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\obj\Debug\DataMarket.Api.csprojResolveAssemblyReference.cache
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\obj\Debug\DataMarket.Api.exe
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Api\obj\Debug\DataMarket.Api.pdb

@@ -1,0 +1,35 @@
+﻿#FiltersDiv{
+        float: left;
+        text-align: left;
+    }
+#FiltersDiv li{
+    margin-top: -50px;
+        display: block;
+        padding: 25px 5px;
+    }
+#FiltersDiv .red{
+        color:#ff6a00;
+    }
+#GroupDiv{
+        position: relative;
+        top: 15%;
+        font-size: 17px;
+    }
+#GroupDivTrapezoid {
+        position: relative;
+        left: 32%;
+        top: 1%;
+        width: 66%;
+        height: 50px;
+        border: 1px solid white;
+        transform: perspective(10px) rotateX(-1deg);
+        margin: 0px;
+        position: absolute;
+    }
+#listName{
+    width: 100%;
+}
+.saveQuestion{
+    text-align: center;
+    color: white;
+}

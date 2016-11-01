@@ -1,0 +1,15 @@
+﻿@model DataMarket.Web.Models.ConsumerFiltersViewModel
+
+<div class="my-groups">
+    <table style="width:100%; table-layout:auto;">
+        <tr>
+            @foreach (var item in Model.FilterModelObj)
+            {
+                item.
+                <td>                
+                    <button class="myMenu-button" type="button" id="@item.FilterId" onclick="location.href='@Url.Action("ShowFilters", "Logged", new { id = item.FilterId })'">@item.DisplayName</button>             
+                </td>  
+            }
+        </tr>
+    </table>
+</div>

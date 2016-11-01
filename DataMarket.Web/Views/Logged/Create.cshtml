@@ -1,0 +1,41 @@
+﻿@model IEnumerable <DataMarket.Web.Models.DatamartViewModel>
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<link href="~/Content/Datamarts_table.css" rel="stylesheet" type="text/css" />
+
+<h1>
+    <i>
+        Our database lets you pick the wanted customers.
+        Choose your type of marketing and start making your own list of customers!
+    </i>
+</h1> 
+
+<section>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th>Market States</th>                    
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <form>    
+            <div class="row" style="width:100%">                                                                     
+                @foreach (var item in Model)
+                {
+                    <div class="col-sm-4" style="text-align:center">
+                        <button type="button" onclick="location.href='@Url.Action(@item.DisplayViewName, "Logged", new { id = item.DatamartId, parent = 0 })'">@item.DisplayName</button>
+                        <br />
+                    </div>
+                }
+            </div>
+        </form>
+    </div>
+</section>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/Clean_sessionStorage.js"></script>

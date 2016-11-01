@@ -1,0 +1,8 @@
+﻿.arrow-down{
+  background:none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 3px 3px 3px 3px;
+  border-color: #ffffff #ffffff #ffffff #ffffff;
+}

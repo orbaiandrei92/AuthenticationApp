@@ -1,0 +1,79 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<DataMarket.Web.Models.DisplayUsersViewModel>
+
+<link href="~/Content/Datamarts_table.css" rel="stylesheet" />
+
+<h1>
+    <i>
+        User list:
+    </i>
+</h1>
+<section>  
+    <div class="tbl-header" id="myLists">
+        <table>
+            <thead>
+                <tr>
+                    <th>Userame</th>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="my-status">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.UserName</td>
+                        <td>@item.Email</td>
+                        <td>@string.Concat(@item.FirstName, ", ", @item.LastName)</td>
+                        @if (item.IsAdmin)
+                        {
+                            <td style="color:crimson">admin</td>
+                        }
+                        else
+                        {
+                            <td style="color:deepskyblue">user</td>
+                        } 
+                        <td>
+                            @if (!item.IsAdmin)
+                            {
+                            <div class="row" style="width:100%; text-align:center;">
+                                <div class="col-sm-4">
+                                    @if (@item.IsEnabled)
+                                    {
+                                        <input type="checkbox" id="@item.UserId" class="checkUser" value="@item.UserId" checked="checked">
+                                        <label for="@item.UserId">Enabled</label>
+                                    }
+                                    else
+                                    {
+                                        <input type="checkbox" id="@item.UserId" class="checkUser" value="@item.UserId">
+                                        <label for="@item.UserId">Disabled</label>
+                                    }
+                                </div>
+                                @Html.ActionLink("Reset", "ResetPassword", new { userId = item.UserId, @class = "col-sm-4" })                                
+                            </div>
+                            }
+                        </td>                                              
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>
+
+@using (Html.BeginForm("Admin", "Logged", FormMethod.Get))
+{
+<div>
+    @Html.PagedListPager(Model, page => Url.Action("Admin", new { page }), PagedListRenderOptions.OnlyShowFivePagesAtATime)
+</div>
+}
+
+<div>
+    <button class="my-button" disabled="disabled" type="button">Save Changes</button>
+</div>
+
+<script src="/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/Admin_script.js"></script>

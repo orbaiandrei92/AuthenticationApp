@@ -1,0 +1,59 @@
+﻿body {
+    background: url("Images/Background_img3.jpg") no-repeat center center fixed;
+    background-size: cover;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #666;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.roww {
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 10%;
+  margin-bottom: 50%;
+}
+
+.itemsLeft{
+  float:left;
+}
+
+.hide{
+  display:none;
+}
+
+.itemsRight{
+  float:right;
+ }
+
+.myFooterText-color{
+    color:#dc4d16;
+}
+
+.myText-color{
+    color:#f1e9e9;
+}
+

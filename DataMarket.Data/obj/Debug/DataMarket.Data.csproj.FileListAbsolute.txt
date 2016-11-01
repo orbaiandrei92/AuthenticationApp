@@ -1,0 +1,44 @@
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Data.dll.config
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Data.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Data.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Infrastructure.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\EntityFramework.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\Autofac.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\NLog.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\Topshelf.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\System.Net.Http.Formatting.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\Newtonsoft.Json.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\AutoMapper.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Infrastructure.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\EntityFramework.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\Autofac.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\NLog.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\Newtonsoft.Json.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\bin\Debug\AutoMapper.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\obj\Debug\DataMarket.Data.csprojResolveAssemblyReference.cache
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\obj\Debug\DataMarket.Data.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.Data\obj\Debug\DataMarket.Data.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Data.dll.config
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Data.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Data.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Infrastructure.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\EntityFramework.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\Autofac.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\NLog.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\Topshelf.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\System.Net.Http.Formatting.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\AutoMapper.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\DataMarket.Infrastructure.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\EntityFramework.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\Autofac.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\NLog.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\bin\Debug\AutoMapper.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\obj\Debug\DataMarket.Data.csprojResolveAssemblyReference.cache
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\obj\Debug\DataMarket.Data.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.Data\obj\Debug\DataMarket.Data.pdb

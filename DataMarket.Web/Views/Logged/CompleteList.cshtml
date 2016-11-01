@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "CompleteList";
+}
+<link href="~/Content/Datamarts_table.css" rel="stylesheet" />
+<h1>
+    <i>Your list was saved!<br />
+    What do you want to do next?
+    </i>
+</h1>
+
+<div style="text-align:center; margin-top:25%;">
+    <button  class="my-button" id="my-button-myLists" type="button">SEE MY LISTS</button>
+    <button  class="my-button" type="button" onclick="location.href='@Url.Action("Create", "Logged")'">START A NEW LIST</button>
+</div>
+<script src="~/Scripts/jquery-1.10.2.js"></script>

@@ -1,0 +1,17 @@
+﻿@model DataMarket.Web.Models.ListInProgressByGroupItemViewModel
+<div id="FiltersDiv">
+    @foreach (var itemByFilter in Model.ListItemsGroupedByFilter)
+    {
+        <br />
+        @Html.Label(itemByFilter.FilterName)<br />
+        <ul>
+            @foreach (var item in itemByFilter.ListItems)
+            {
+                <li>
+                    <label for="@item.ListItemId"> @item.FilterValueName</label>
+                </li>
+            }
+        </ul>
+    }
+</div>
+

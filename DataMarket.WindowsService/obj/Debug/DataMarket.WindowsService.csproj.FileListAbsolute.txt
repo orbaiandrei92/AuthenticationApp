@@ -1,0 +1,26 @@
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Debug\DataMarket.WindowsService.exe.config
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Debug\DataMarket.WindowsService.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Debug\DataMarket.WindowsService.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Debug\EntityFramework.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Debug\EntityFramework.SqlServer.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Debug\EntityFramework.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Debug\EntityFramework.SqlServer.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.MyService.resources
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.ProjectInstaller.resources
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.csproj.GenerateResource.Cache
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.csprojResolveAssemblyReference.cache
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\bin\Debug\DataMarket.WindowsService.exe.config
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\bin\Debug\DataMarket.WindowsService.exe
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\bin\Debug\DataMarket.WindowsService.pdb
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\bin\Debug\EntityFramework.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\bin\Debug\EntityFramework.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.csprojResolveAssemblyReference.cache
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.MyService.resources
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.ProjectInstaller.resources
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.csproj.GenerateResource.Cache
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.exe
+D:\Projects\Personal Projects\DataMarket (MVC - Web app.)\DataMarket\DataMarket.WindowsService\obj\Debug\DataMarket.WindowsService.pdb

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataMarketModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SavedFilters">
+    <Key>
+      <PropertyRef Name="SavedFilterId" />
+    </Key>
+    <Property Name="SavedFilterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ListName" Type="varchar" MaxLength="50" />
+    <Property Name="Query" Type="text" />
+    <Property Name="Count" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" />
+  </EntityType>
+  <EntityType Name="SavedIds">
+    <Key>
+      <PropertyRef Name="SavedId" />
+    </Key>
+    <Property Name="SavedId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FilterValueId" Type="int" Nullable="false" />
+    <Property Name="FilterId" Type="int" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="SavedFilterId" Type="int" Nullable="false" />
+    <Property Name="Count" Type="int" />
+  </EntityType>
+  <EntityType Name="Statuses">
+    <Key>
+      <PropertyRef Name="StatusId" />
+    </Key>
+    <Property Name="StatusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="IsAdmin" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_SavedIds_SavedFilters">
+    <End Role="SavedFilters" Type="Self.SavedFilters" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SavedIds" Type="Self.SavedIds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SavedFilters">
+        <PropertyRef Name="SavedFilterId" />
+      </Principal>
+      <Dependent Role="SavedIds">
+        <PropertyRef Name="SavedFilterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_StatusSavedFil">
+    <End Role="Statuses" Type="Self.Statuses" Multiplicity="0..1" />
+    <End Role="SavedFilters" Type="Self.SavedFilters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statuses">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="SavedFilters">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UserSavedFil">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="SavedFilters" Type="Self.SavedFilters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="SavedFilters">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DataMarketModelStoreContainer">
+    <EntitySet Name="SavedFilters" EntityType="Self.SavedFilters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SavedIds" EntityType="Self.SavedIds" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Statuses" EntityType="Self.Statuses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_SavedIds_SavedFilters" Association="Self.fk_SavedIds_SavedFilters">
+      <End Role="SavedFilters" EntitySet="SavedFilters" />
+      <End Role="SavedIds" EntitySet="SavedIds" />
+    </AssociationSet>
+    <AssociationSet Name="fk_StatusSavedFil" Association="Self.fk_StatusSavedFil">
+      <End Role="Statuses" EntitySet="Statuses" />
+      <End Role="SavedFilters" EntitySet="SavedFilters" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UserSavedFil" Association="Self.fk_UserSavedFil">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SavedFilters" EntitySet="SavedFilters" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

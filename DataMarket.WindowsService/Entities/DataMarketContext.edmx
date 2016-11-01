@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DataMarketModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="SavedFilters">
+          <Key>
+            <PropertyRef Name="SavedFilterId" />
+          </Key>
+          <Property Name="SavedFilterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ListName" Type="varchar" MaxLength="50" />
+          <Property Name="Query" Type="text" />
+          <Property Name="Count" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="StatusId" Type="int" />
+        </EntityType>
+        <EntityType Name="SavedIds">
+          <Key>
+            <PropertyRef Name="SavedId" />
+          </Key>
+          <Property Name="SavedId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FilterValueId" Type="int" Nullable="false" />
+          <Property Name="FilterId" Type="int" Nullable="false" />
+          <Property Name="GroupId" Type="int" Nullable="false" />
+          <Property Name="SavedFilterId" Type="int" Nullable="false" />
+          <Property Name="Count" Type="int" />
+        </EntityType>
+        <EntityType Name="Statuses">
+          <Key>
+            <PropertyRef Name="StatusId" />
+          </Key>
+          <Property Name="StatusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="IsAdmin" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="fk_SavedIds_SavedFilters">
+          <End Role="SavedFilters" Type="Self.SavedFilters" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SavedIds" Type="Self.SavedIds" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SavedFilters">
+              <PropertyRef Name="SavedFilterId" />
+            </Principal>
+            <Dependent Role="SavedIds">
+              <PropertyRef Name="SavedFilterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_StatusSavedFil">
+          <End Role="Statuses" Type="Self.Statuses" Multiplicity="0..1" />
+          <End Role="SavedFilters" Type="Self.SavedFilters" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Statuses">
+              <PropertyRef Name="StatusId" />
+            </Principal>
+            <Dependent Role="SavedFilters">
+              <PropertyRef Name="StatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_UserSavedFil">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="SavedFilters" Type="Self.SavedFilters" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="SavedFilters">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DataMarketModelStoreContainer">
+          <EntitySet Name="SavedFilters" EntityType="Self.SavedFilters" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SavedIds" EntityType="Self.SavedIds" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Statuses" EntityType="Self.Statuses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="fk_SavedIds_SavedFilters" Association="Self.fk_SavedIds_SavedFilters">
+            <End Role="SavedFilters" EntitySet="SavedFilters" />
+            <End Role="SavedIds" EntitySet="SavedIds" />
+          </AssociationSet>
+          <AssociationSet Name="fk_StatusSavedFil" Association="Self.fk_StatusSavedFil">
+            <End Role="Statuses" EntitySet="Statuses" />
+            <End Role="SavedFilters" EntitySet="SavedFilters" />
+          </AssociationSet>
+          <AssociationSet Name="fk_UserSavedFil" Association="Self.fk_UserSavedFil">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="SavedFilters" EntitySet="SavedFilters" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DataMarketModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="SavedFilter">
+          <Key>
+            <PropertyRef Name="SavedFilterId" />
+          </Key>
+          <Property Name="SavedFilterId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ListName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Query" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Count" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="StatusId" Type="Int32" />
+          <NavigationProperty Name="SavedIds" Relationship="Self.fk_SavedIds_SavedFilters" FromRole="SavedFilters" ToRole="SavedIds" />
+          <NavigationProperty Name="Status" Relationship="Self.fk_StatusSavedFil" FromRole="SavedFilters" ToRole="Statuses" />
+          <NavigationProperty Name="User" Relationship="Self.fk_UserSavedFil" FromRole="SavedFilters" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="SavedId">
+          <Key>
+            <PropertyRef Name="SavedId1" />
+          </Key>
+          <Property Name="SavedId1" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FilterValueId" Type="Int32" Nullable="false" />
+          <Property Name="FilterId" Type="Int32" Nullable="false" />
+          <Property Name="GroupId" Type="Int32" Nullable="false" />
+          <Property Name="SavedFilterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SavedFilter" Relationship="Self.fk_SavedIds_SavedFilters" FromRole="SavedIds" ToRole="SavedFilters" />
+          <Property Name="Count" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="StatusId" />
+          </Key>
+          <Property Name="StatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SavedFilters" Relationship="Self.fk_StatusSavedFil" FromRole="Statuses" ToRole="SavedFilters" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IsAdmin" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="SavedFilters" Relationship="Self.fk_UserSavedFil" FromRole="Users" ToRole="SavedFilters" />
+        </EntityType>
+        <Association Name="fk_SavedIds_SavedFilters">
+          <End Role="SavedFilters" Type="Self.SavedFilter" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SavedIds" Type="Self.SavedId" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SavedFilters">
+              <PropertyRef Name="SavedFilterId" />
+            </Principal>
+            <Dependent Role="SavedIds">
+              <PropertyRef Name="SavedFilterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_StatusSavedFil">
+          <End Role="Statuses" Type="Self.Status" Multiplicity="0..1" />
+          <End Role="SavedFilters" Type="Self.SavedFilter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Statuses">
+              <PropertyRef Name="StatusId" />
+            </Principal>
+            <Dependent Role="SavedFilters">
+              <PropertyRef Name="StatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_UserSavedFil">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="SavedFilters" Type="Self.SavedFilter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="SavedFilters">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DataMarketEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SavedFilters" EntityType="Self.SavedFilter" />
+          <EntitySet Name="SavedIds" EntityType="Self.SavedId" />
+          <EntitySet Name="Statuses" EntityType="Self.Status" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="fk_SavedIds_SavedFilters" Association="Self.fk_SavedIds_SavedFilters">
+            <End Role="SavedFilters" EntitySet="SavedFilters" />
+            <End Role="SavedIds" EntitySet="SavedIds" />
+          </AssociationSet>
+          <AssociationSet Name="fk_StatusSavedFil" Association="Self.fk_StatusSavedFil">
+            <End Role="Statuses" EntitySet="Statuses" />
+            <End Role="SavedFilters" EntitySet="SavedFilters" />
+          </AssociationSet>
+          <AssociationSet Name="fk_UserSavedFil" Association="Self.fk_UserSavedFil">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="SavedFilters" EntitySet="SavedFilters" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DataMarketModelStoreContainer" CdmEntityContainer="DataMarketEntities">
+          <EntitySetMapping Name="SavedFilters">
+            <EntityTypeMapping TypeName="DataMarketModel.SavedFilter">
+              <MappingFragment StoreEntitySet="SavedFilters">
+                <ScalarProperty Name="SavedFilterId" ColumnName="SavedFilterId" />
+                <ScalarProperty Name="ListName" ColumnName="ListName" />
+                <ScalarProperty Name="Query" ColumnName="Query" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SavedIds">
+            <EntityTypeMapping TypeName="DataMarketModel.SavedId">
+              <MappingFragment StoreEntitySet="SavedIds">
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="SavedId1" ColumnName="SavedId" />
+                <ScalarProperty Name="FilterValueId" ColumnName="FilterValueId" />
+                <ScalarProperty Name="FilterId" ColumnName="FilterId" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="SavedFilterId" ColumnName="SavedFilterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Statuses">
+            <EntityTypeMapping TypeName="DataMarketModel.Status">
+              <MappingFragment StoreEntitySet="Statuses">
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="DataMarketModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

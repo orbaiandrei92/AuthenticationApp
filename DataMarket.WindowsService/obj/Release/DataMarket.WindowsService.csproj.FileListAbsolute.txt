@@ -1,0 +1,12 @@
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Release\DataMarket.WindowsService.exe.config
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Release\DataMarket.WindowsService.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Release\DataMarket.WindowsService.pdb
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Release\EntityFramework.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Release\EntityFramework.SqlServer.dll
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Release\EntityFramework.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\bin\Release\EntityFramework.SqlServer.xml
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Release\DataMarket.WindowsService.MyService.resources
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Release\DataMarket.WindowsService.ProjectInstaller.resources
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Release\DataMarket.WindowsService.csproj.GenerateResource.Cache
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Release\DataMarket.WindowsService.exe
+D:\TFS\RIA Internship\DataMarket\DataMarket.WindowsService\obj\Release\DataMarket.WindowsService.pdb

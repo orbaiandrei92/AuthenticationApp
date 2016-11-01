@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60B2015D-AA41-4AB6-8D10-5AAE3BFA1F8E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataMarket.Data</RootNamespace>
+    <AssemblyName>DataMarket.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataMarketConfigurationDbContext.cs" />
+    <Compile Include="DataMarketDbContext.cs" />
+    <Compile Include="Entities\Configuration\DataMarketConfiguration\DatamartConfiguration.cs" />
+    <Compile Include="Entities\Configuration\DataMarketConfiguration\FilterValueConfiguration.cs" />
+    <Compile Include="Entities\Configuration\DataMarketConfiguration\GroupConfiguration.cs" />
+    <Compile Include="Entities\Configuration\DataMarketListInProgress\ListInProgressItemConfiguration.cs" />
+    <Compile Include="DataMarketListInProgressDbContext.cs" />
+    <Compile Include="Entities\Configuration\DataMarket\SavedIdsConfiguration.cs" />
+    <Compile Include="Entities\DataMarketListInProgress\ListInProgressItem.cs" />
+    <Compile Include="Entities\Configuration\DataMarket\SavedFilterConfiguration.cs" />
+    <Compile Include="Entities\Configuration\DataMarket\StatusConfiguration.cs" />
+    <Compile Include="Entities\Configuration\DataMarket\UserConfiguration.cs" />
+    <Compile Include="Entities\Configuration\RelatedTestEntityConfiguration.cs" />
+    <Compile Include="Entities\Configuration\TestEntityConfiguration.cs" />
+    <Compile Include="Entities\DataMarketConfiguration\Datamart.cs" />
+    <Compile Include="Entities\DataMarketConfiguration\Filter.cs" />
+    <Compile Include="Entities\Configuration\DataMarketConfiguration\FilterConfiguration.cs" />
+    <Compile Include="Entities\DataMarketConfiguration\FilterValues.cs" />
+    <Compile Include="Entities\DataMarketConfiguration\Group.cs" />
+    <Compile Include="Entities\DataMarket\ListStatus.cs" />
+    <Compile Include="Entities\DataMarket\SavedFilter.cs" />
+    <Compile Include="Entities\DataMarket\SavedIds.cs" />
+    <Compile Include="Entities\DataMarket\Status.cs" />
+    <Compile Include="Entities\DataMarket\User.cs" />
+    <Compile Include="Entities\RelatedTestEntity.cs" />
+    <Compile Include="Entities\TestEntity.cs" />
+    <Compile Include="Interfaces\IDatamartRepository.cs" />
+    <Compile Include="Interfaces\IFilterRepository.cs" />
+    <Compile Include="Interfaces\IFilterValueRepository.cs" />
+    <Compile Include="Interfaces\IGroupRepository.cs" />
+    <Compile Include="Interfaces\IListInProgressRepository.cs" />
+    <Compile Include="Interfaces\ISavedFilterRepository.cs" />
+    <Compile Include="Interfaces\ISavedIdsRepository.cs" />
+    <Compile Include="Interfaces\ITestRepository.cs" />
+    <Compile Include="Interfaces\IUserRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DatamartRepository.cs" />
+    <Compile Include="Repositories\FilterRepository.cs" />
+    <Compile Include="Repositories\FilterValueRepository.cs" />
+    <Compile Include="Repositories\GroupRepository.cs" />
+    <Compile Include="Repositories\ListInProgressRepository.cs" />
+    <Compile Include="Repositories\SavedFilterRepository.cs" />
+    <Compile Include="Repositories\SavedIdsRepository.cs" />
+    <Compile Include="Repositories\TestRepository.cs" />
+    <Compile Include="Repositories\TestRepositoryMock.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Entities\DataMarket\SavedIdsToSend.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataMarket.Infrastructure\DataMarket.Infrastructure.csproj">
+      <Project>{FE55A8D4-AF0A-4042-A6E8-A27939F6EAC1}</Project>
+      <Name>DataMarket.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

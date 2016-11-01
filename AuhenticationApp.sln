@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationApp", "MyAuthWebApp\AuthenticationApp.csproj", "{4ED00A8A-9A7D-48CC-9283-28AA2F458897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginLibrary", "LoginLibrary\LoginLibrary.csproj", "{DDAE1602-97CC-4307-B547-13861681AAC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLoginLibrary", "TestLoginLibrary\TestLoginLibrary.csproj", "{4B5E0CEB-6E46-4E54-94B8-9561FD3660E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTest", "WebApiTest\WebApiTest.csproj", "{5714C16A-F433-4163-BDE3-A05AE3FED0FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ED00A8A-9A7D-48CC-9283-28AA2F458897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED00A8A-9A7D-48CC-9283-28AA2F458897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED00A8A-9A7D-48CC-9283-28AA2F458897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED00A8A-9A7D-48CC-9283-28AA2F458897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDAE1602-97CC-4307-B547-13861681AAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAE1602-97CC-4307-B547-13861681AAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAE1602-97CC-4307-B547-13861681AAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAE1602-97CC-4307-B547-13861681AAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B5E0CEB-6E46-4E54-94B8-9561FD3660E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B5E0CEB-6E46-4E54-94B8-9561FD3660E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B5E0CEB-6E46-4E54-94B8-9561FD3660E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B5E0CEB-6E46-4E54-94B8-9561FD3660E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5714C16A-F433-4163-BDE3-A05AE3FED0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5714C16A-F433-4163-BDE3-A05AE3FED0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5714C16A-F433-4163-BDE3-A05AE3FED0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5714C16A-F433-4163-BDE3-A05AE3FED0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.0.109:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MyAuthWebApp\\AuthenticationApp.csproj
+		SccProjectName1 = MyAuthWebApp
+		SccLocalPath1 = MyAuthWebApp
+		SccProjectUniqueName2 = LoginLibrary\\LoginLibrary.csproj
+		SccProjectName2 = LoginLibrary
+		SccLocalPath2 = LoginLibrary
+		SccProjectUniqueName3 = TestLoginLibrary\\TestLoginLibrary.csproj
+		SccProjectName3 = TestLoginLibrary
+		SccLocalPath3 = TestLoginLibrary
+		SccProjectUniqueName4 = WebApiTest\\WebApiTest.csproj
+		SccProjectName4 = WebApiTest
+		SccLocalPath4 = WebApiTest
+	EndGlobalSection
+EndGlobal
